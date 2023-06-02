@@ -1,0 +1,23 @@
+.headerUser {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+
+.headerLogin {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+
+.headerTitle{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .headerNav {
+        width: 410px;
+    }
+}

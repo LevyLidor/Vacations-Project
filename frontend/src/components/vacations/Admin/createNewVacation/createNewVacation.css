@@ -1,0 +1,33 @@
+.form-newVacation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: inset 0px 0px 20px 0px rgb(0 0 0 / 10%);
+    background-color: rgb(157 145 64 / 10%);
+    border-radius: 10px;
+}
+
+.createBtn {
+    width: 250px;
+}
+
+.createTitle {
+    font-weight: bold;
+    width: 100%;
+}
+
+.creatDateModal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.createLabel {
+    font-weight: bolder;
+}
+
+.createFooter {
+    justify-content: space-evenly;
+}

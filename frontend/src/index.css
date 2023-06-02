@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'MarkoOne-Regular';
+  src: url('../src/Font/MarkoOne-Regular.ttf');
+}
+
+*{
+  font-family: 'MarkoOne-Regular';
+}
+
+.loginClass {
+  background-image: url('./assets/BG/beach-vacation-silhouette-art-qyw0phkjorh5w8fp.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.userClass{
+  background-image: url('./assets/BG/16282276_rm222batch2-mind-03.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#body{
+  overflow: hidden;
+}
+
+#root{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -17px;
+  overflow-y: scroll;
+}

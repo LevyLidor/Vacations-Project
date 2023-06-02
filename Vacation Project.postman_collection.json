@@ -1,0 +1,444 @@
+{
+	"info": {
+		"_postman_id": "ecd6513c-6a7d-4c06-a5db-189c9ca96b61",
+		"name": "Vacation Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23673803"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"lidorlevy92@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3005/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"firstName\": \"Idan\",\r\n    \"lastName\": \"Levy\",\r\n    \"email\": \"idanlevy239@gmail.com\",\r\n    \"password\": \"1672\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3005/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/api/users/info",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"users",
+								"info"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Create new vacation (Admin)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "destination",
+									"value": "Tel Aviv",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "nice place to eat",
+									"type": "text"
+								},
+								{
+									"key": "startDate",
+									"value": "2023-02-16",
+									"type": "text"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-02-15",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "499",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Lidor Levy/Desktop/John Bryce/enably/NodeJs/Practice/Images-ex/LISOEW.JPG"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3005/api/vacation",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"vacation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update vacation (Admin)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "destination",
+									"value": "Holand",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "Eruo",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "startDate",
+									"value": "2023-02-10",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "endDate",
+									"value": "2023-02-18",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "745",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Lidor Levy/Desktop/John Bryce/enably/NodeJs/Practice/Images-ex/Zanzibar 02.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3005/api/vacation/92",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"vacation",
+								"92"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete vacation (Admin)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/api/vacation/86",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"vacation",
+								"86"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get chart (Admin)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/api/chart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"chart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Filter",
+					"item": [
+						{
+							"name": "Vacations Likes by user id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3005/api/vacationLikes?page=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"api",
+										"vacationLikes"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Vacations Not Started",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3005/api/vacationsNotStarted?page=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"api",
+										"vacationsNotStarted"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Vacations Started And Not Ended",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3005/api/vacationsStartedNotEnded?page=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3005",
+									"path": [
+										"api",
+										"vacationsStartedNotEnded"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get all vacations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/api/vacation?page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"vacation"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post followers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/api/vacatioin/followers/58",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"vacatioin",
+								"followers",
+								"58"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete followers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3005/api/vacatioin/followers/61",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3005",
+							"path": [
+								"api",
+								"vacatioin",
+								"followers",
+								"61"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3MSwiZmlyc3ROYW1lIjoiSWRhbiIsImVtYWlsIjoiaWRhbmxldnkyMzkxQGdtYWlsLmNvbSIsInJvbGUiOjJ9LCJpYXQiOjE2NzkzMTM0OTAsImV4cCI6MTY3OTMyNzg5MH0.rqb-XoKAtsbSmb3wFUJfjwmX9ATK-vB9W74eocaFfiA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

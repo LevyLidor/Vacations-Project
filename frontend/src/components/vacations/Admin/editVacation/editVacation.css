@@ -1,0 +1,29 @@
+.form-editVacation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: inset 0px 0px 20px 0px rgb(0 0 0 / 10%);
+    background-color: rgb(157 145 64 / 10%);
+    border-radius: 10px;
+}
+
+.editTitle {
+    font-weight: bold;
+    width: 100%;
+}
+
+.editDateModal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.editLabel {
+    font-weight: bolder;
+}
+
+.editFooter {
+    justify-content: space-evenly;
+}
